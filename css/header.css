@@ -9,6 +9,7 @@
 
 .icon-menu {
     font-size: 2rem;
+    color: var(--text-color);
     cursor: pointer;
 }
 
