@@ -1,4 +1,6 @@
 @import url("css/header.css");
+@import url("css/banner.css");
+@import url("css/about.css");
 
 
 * {
@@ -11,9 +13,13 @@
     --bg-main: linear-gradient(180deg, #304968 0%, #36C1A0 52.6%, #4650BD 100%);
     --bg-secondary: #4650BD;
     --text-color: white;
+
+    --font-main: 'Raleway', sans-serif;
+    --font-secondary: 'Calistoga', cursive;
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
     min-height: 100vh;
+    font-family: var(--font-main);
+    color: var(--text-color);
 }

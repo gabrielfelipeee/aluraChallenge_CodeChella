@@ -1,0 +1,50 @@
+.main {
+    background: var(--bg-main);
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 1.5rem;
+}
+
+.about-image {
+    width: 100%;
+}
+
+.about-title {
+    font-size: 2rem;
+    font-weight: 700;
+    max-width: 312px;
+    text-align: center;
+}
+
+.about-title-local {
+    display: block;
+}
+
+.about-text {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+.about-buy-ticket {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-decoration: none;
+    font-weight: 1.25rem;
+    font-weight: 700;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--bg-secondary);
+    color: var(--text-color);
+    box-shadow: 3px 3px 1px #444444;
+}
