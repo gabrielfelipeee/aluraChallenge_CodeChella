@@ -1,0 +1,130 @@
+/* header styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-secondary);
+    padding: 1.5rem 2rem;
+    position: relative;
+}
+
+.icon-menu {
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.list-menu {
+    background-color: var(--bg-secondary);
+    padding: 2rem 1rem;
+    position: absolute;
+    top: 100%;
+    right: 0;
+}
+
+.list-menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+}
+
+.list-menu-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.list-menu-link {
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.line-menu {
+    margin: 0 .5rem;
+}
+
+.list-menu-invisible {
+    display: none;
+}
+
+
+/* banner styles */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-secondary);
+    height: 270px;
+    background: url('../images/banner-homepage-mobile.png') no-repeat center center /cover;
+}
+
+.banner-title {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    color: var(--text-colo);
+    text-align: center;
+}
+
+.banner-name-event {
+    display: block;
+}
+
+
+/*main > section .about styles */
+.main {
+    background: var(--bg-main);
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 1.5rem;
+}
+
+.about-image {
+    width: 100%;
+}
+
+.about-title {
+    font-size: 2rem;
+    font-weight: 700;
+    max-width: 312px;
+    text-align: center;
+}
+
+.about-title-local {
+    display: block;
+}
+
+.about-text {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+.about-buy-ticket {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-decoration: none;
+    font-weight: 1.25rem;
+    font-weight: 700;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--bg-secondary);
+    color: var(--text-color);
+    box-shadow: 3px 3px 1px #444444;
+}
+
+/*main > section .about styles */
