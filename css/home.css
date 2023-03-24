@@ -75,7 +75,7 @@
 }
 
 
-/*main > section .about styles */
+/*main > section > .about styles */
 .main {
     background: var(--bg-main);
 }
@@ -86,7 +86,8 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: 2rem 1.5rem;
+    padding: 2rem 1.5rem 0 1.5rem;
+    margin-bottom: 4.5rem;
 }
 
 .about-image {
@@ -127,4 +128,71 @@
     box-shadow: 3px 3px 1px #444444;
 }
 
-/*main > section .about styles */
+/*main > section > .line-up styles */
+
+.line-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1.5rem 2rem 1.5rem;
+    text-align: center;
+}
+
+.line-up_title {
+    font: 400 3rem var(--font-secondary);
+    margin-bottom: 5rem;
+}
+
+.line-up-dates_day {
+    display: inline-block;
+    font: 400 2rem var(--font-secondary);
+    text-transform: uppercase;
+    background-color: var(--bg-dates);
+    margin-bottom: 3rem;
+}
+.day_saturday {
+    padding: 1rem;
+    line-height: normal;
+}
+.day_sunday {
+    padding: 1rem .63rem 1rem 1rem;
+    margin-top: 5rem;
+}
+
+.line-up-days_title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.line-up_main-list, .line-up_secondary-list, .line-up_tertiary-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.line-up_main-list_item {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.line-up_secondary-list_item {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.line-up_tertiary-list_item {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.line-up_item-margin {
+    margin-bottom: 1rem;
+}
+
+/* Image guitar styles*/
+.image-guitar {
+    width: 100%;
+}

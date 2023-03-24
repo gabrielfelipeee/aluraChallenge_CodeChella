@@ -10,6 +10,7 @@
 :root {
     --bg-main: linear-gradient(180deg, #304968 0%, #36C1A0 52.6%, #4650BD 100%);
     --bg-secondary: #4650BD;
+    --bg-dates: #008364;
     --text-color: white;
 
     --font-main: 'Raleway', sans-serif;
