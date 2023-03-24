@@ -42,7 +42,10 @@
         </div>
 
         <section class="about">
-            <img class="about-image" src="images/homepage-mobile.png" alt="Imagem da banda">
+            <picture class="about-images">
+                <source media="(min-width: 768px)" srcset="images/homepage-tablet_desktop.png" type="image/png">
+                <img src="images/homepage-mobile.png" alt="Imagem da banda">
+            </picture>
             <h2 class="about-title">
                 < 11 e 12 de Março > <span class="about-title-local">Aluródromo de São Paulo</span>
             </h2>
@@ -168,7 +171,11 @@
             </div>
         </section>
 
-        <img class="image-guitar" src="images/homepage-guitar_mobile.png" alt="Imagem uma pessoa tocando violão">
+        <picture class="images-guitar">
+            <source media="(max-width: 400px)" srcset="images/homepage-guitar_mobile.png" type="image/png">
+            <source media="(max-width: 768px)" srcset="images/homepage-guitar_tablet.png" type="image/png">
+            <img src="images/homepage-guitar_desktop.png" alt="Imagem uma pessoa tocando violão">
+        </picture>
     </main>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
