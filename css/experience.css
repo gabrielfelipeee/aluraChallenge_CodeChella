@@ -1,5 +1,45 @@
 @import url("../style.css");
+/* banner styles */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/img-experience/banner-experience-mobile.png") no-repeat center center /cover;
+    height: 270px;
+}
 
+.banner-title {
+    font: 400 2rem var(--font-secondary);
+}
+
+
+/*main > section > .accessibility styles */
 .main {
-    height: 1000px;
+    background: var(--bg-main);
+}
+
+.topics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1.5rem 0 1.5rem;
+}
+
+.topic-images > img {
+    margin-bottom: 2rem;
+}
+
+.topic-title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    text-align: center;
+}
+
+.topic-text {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    text-align: center;
+    padding-bottom: 2rem;
 }
