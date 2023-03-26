@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeChella - Mapa de Setores</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/sectors.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html"><img src="../images/logo.svg" alt="Logo do CodeChella"></a>
+        <ion-icon class="icon-menu" name="menu-outline"></menu></ion-icon>
+        <nav class="list-menu list-menu-invisible">
+            <ul class="list-menu-items">
+                <li class="list-menu-item">
+                    <a class="list-menu-link" href="experience.html" rel="internal">A experiência</a>
+                    <hr class="line-menu">
+                </li>
+                <li class="list-menu-item">
+                    <a class="list-menu-link" href="sectors.html" rel="internal">Mapa de Setores</a>
+                    <hr class="line-menu">
+                </li>
+                <li class="list-menu-item">
+                    <a class="list-menu-link" href="#" rel="internal">Informações</a>
+                    <hr class="line-menu">
+                </li>
+                <li class="list-menu-item">
+                    <a class="list-menu-link" href="#" rel="internal">Ingresso</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="banner">
+            <h1 class="banner-title">Mapa de Setores</h1>
+        </div>
+        <section class="map-sectors">
+            <picture class="map-images">
+                <source media="(max-width: 400px)" srcset="../images/img-sectors/map-sectors-mobile.png" type="image/png">
+                <source media="(max-width: 768px)" srcset="../images/img-sectors/map-sectors-tablet.png" type="image/png">
+                <img src="../images/img-sectors/map-sectors-desktop.png" alt="Imagem do mapa de setores">
+            </picture>
+
+            <div class="map-label">
+                <h3 class="map-label_title">Legenda:</h3>
+                <ul class="map-label_list">
+                    <li class="map-label-list_item">
+                        <span class="map-label_color pista-premium"></span>
+                        Pista Premium
+                    </li>
+                    <li class="map-label-list_item">
+                        <span class="map-label_color pista-comum"></span>
+                        Pista Comum
+                    </li>
+                    <li class="map-label-list_item">
+                        <span class="map-label_color cadeiras-terreo"></span>
+                        Cadeiras térreo
+                    </li>
+                    <li class="map-label-list_item">
+                        <span class="map-label_color cadeiras-superiores"></span>
+                        Cadeiras superiores
+                    </li>
+                    <li class="map-label-list_item">
+                        <span class="map-label_color rampas"></span>
+                        Rampas
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="details">
+            <h2 class="details-title">Mais detalhes sobre os setores:</h2>
+
+            <div class="details-topics">
+            <picture class="details-topics_images">
+                <source media="(min-width: 768px)" srcset="../images/img-sectors/track-tablet_desktop.png" type="image/png">
+                <img src="../images/img-sectors/track-mobile.png" alt="Imagem de várias pessoas em uma pista.">
+            </picture>
+            <h3 class="details-topics_title">Pista</h3>
+            <p class="details-topics_text">
+                Pista convencional, atendida pelos bares e banheiros das laterais do estádio. Espaço amplo, com local para sentar e descansar. Separada da pista premium por uma grade.
+            </p>
+            </div>
+
+            <div class="details-topics">
+                <picture class="details-topics_images">
+                    <source media="(min-width: 768px)" srcset="../images/img-sectors/premium-track-tablet_desktop.png" type="image/png">
+                    <img src="../images/img-sectors/premium-track-mobile.png" alt="Imagem de várias pessoas em uma pista.">
+                </picture>
+                <h3 class="details-topics_title">Pista Premium</h3>
+                <p class="details-topics_text">
+                    Pista mais próxima do palco, com acesso muito próximo a banheiros e bares num raio de 100m. Todas as pessoas idosas e/ou com deficiência têm direito a acesso gratuito a essa área.
+                </p>
+                </div>
+
+                <div class="details-topics">
+                    <picture class="details-topics_images">
+                        <source media="(min-width: 768px)" srcset="../images/img-sectors/chairs-tablet_desktop.png" type="image/png">
+                        <img src="../images/img-sectors/chairs-mobile.png" alt="Imagem de várias pessoas em uma pista.">
+                    </picture>
+                    <h3 class="details-topics_title">Cadeiras</h3>
+                    <p class="details-topics_text">
+                        Opção de cadeiras térreas ou elevadas. Acesso próximo a banheiros e bares, visão um pouco elevada em relação às pistas.
+                    </p>
+                    </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a class="footer-logo" href="../index.html"><img src="../images/logo.svg" alt="Logo do CodeChella"></a>
+        <div class="social-media">
+            <p class="footer-text">Acesse nossas redes:</p>
+            <ul class="footer-list">
+                <li class="footer-list-item">
+                    <a class="footer-list-link" href="#">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a>
+                </li>
+                <li class="footer-list-item">
+                    <a class="footer-list-link" href="#">
+                        <ion-icon name="logo-twitch"></ion-icon>
+                    </a>
+                </li>
+                <li class="footer-list-item">
+                    <a class="footer-list-link" href="#">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+                <li class="footer-list-item">
+                    <a class="footer-list-link" href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p class="footer-text">
+            Desenvolvido por Alura. Projeto fictício sem fins comerciais.
+        </p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="../main.js"></script>
+</body>
+</html>

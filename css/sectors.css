@@ -1,0 +1,117 @@
+@import url("../style.css");
+
+.main {
+    background: var(--bg-main);
+}
+
+
+/* banner styles */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/img-sectors/banner-sectors-mobile.png") no-repeat center center /cover;
+    height: 270px;
+}
+
+.banner-title {
+    font: 400 2rem var(--font-secondary);
+}
+
+
+/*main > section > .map-sectors styles */
+.map-sectors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-label {
+    padding-right: 1rem;
+}
+
+.map-label_title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1.75rem;
+}
+
+.map-label_list {
+    display: grid;
+    gap: 2rem;
+    list-style: none;
+}
+
+.map-label-list_item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.map-label_color {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+}
+
+.pista-premium {
+    background-color: #0E7DF1;
+}
+.pista-comum {
+    background-color: #FE016E;
+}
+.cadeiras-terreo {
+    background-color: #01A89E;
+}
+.cadeiras-superiores {
+    background-color: #3F51B5;
+}
+.rampas {
+    background-color: #0E7DF1;
+}
+
+
+/*main > section > .details styles */
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.details-title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    margin-top: 1.75rem;
+    text-align: center;
+}
+
+.details-topics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-topics_images > img {
+    margin:2rem 0 1.5rem 0;
+}
+
+.details-topics_title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.details-topics_text  {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    text-align: center;
+}

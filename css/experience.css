@@ -1,4 +1,10 @@
 @import url("../style.css");
+
+.main {
+    background: var(--bg-main);
+}
+
+
 /* banner styles */
 .banner {
     display: flex;
@@ -14,10 +20,6 @@
 
 
 /*main > section > .accessibility styles */
-.main {
-    background: var(--bg-main);
-}
-
 .topics {
     display: flex;
     flex-direction: column;
