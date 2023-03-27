@@ -1,0 +1,81 @@
+@import url("../style.css");
+
+.main {
+    background: var(--bg-main);
+}
+
+
+/* banner styles */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-secondary);
+    height: 270px;
+    background: url('../images/img-information/banner-info-mobile.png') no-repeat center center /cover;
+}
+
+.banner-title {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    color: var(--text-colo);
+    text-align: center;
+}
+
+.banner-name-event {
+    display: block;
+}
+
+
+/*main > section > .common-questions styles */
+.common-questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.common-questions-title {
+    font: 400 2rem var(--font-secondary);
+    padding: 1.5rem 3rem;
+    text-align: center;
+}
+
+.questions-list {
+    display: grid;
+    gap: .5rem;
+    list-style: none;
+}
+
+.item-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    background-color: var(--bg-secondary);
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.item-response {
+    background-color: var(--bg-response);
+    color: var(--text-response);
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* toggle */
+.item-response-closed {
+    display: none;
+}
+.image-closed {
+    transform: rotate(180deg) scaleY(1);
+}
