@@ -1,0 +1,63 @@
+@import url("../style.css");
+
+.main {
+    background: var(--bg-main);
+}
+
+
+/* banner styles */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/img-ticket/banner-ticket-mobile.png") no-repeat center center /cover;
+    height: 270px;
+}
+
+.banner-title {
+    font: 400 2rem var(--font-secondary);
+}
+
+/* form styles */
+
+.form-title {
+    font: 400 2rem var(--font-secondary);
+    margin: 2rem 1.5rem 3rem 1.5rem;
+    text-align: center;
+    color: var(--text-response);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.5rem;
+    gap: 2rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-response);
+}
+
+input, select {
+    font-size: 1.25rem;
+    padding: .5rem;
+}
+
+input[type="submit"] {
+    background: var(--bg-secondary) url("../images/img-ticket/arrow-left.svg") no-repeat center right 1rem;
+    color: var(--text-color);
+    font-size: 1.25rem;
+    font-weight: 700;
+    min-width: 200px;
+    box-shadow: 4px 4px 0px #000000;
+    padding: .5rem;
+    margin: auto auto 2rem auto;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}

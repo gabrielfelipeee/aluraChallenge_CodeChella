@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeChella - A experiência</title>
+    <title>CodeChella - Ingresso</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/experience.css">
+    <link rel="stylesheet" href="../css/ticket.css">
 </head>
 <body>
     <header class="header">
@@ -18,11 +18,11 @@
         <nav class="list-menu list-menu-invisible">
             <ul class="list-menu-items">
                 <li class="list-menu-item">
-                    <a class="list-menu-link" href="../pages/experience.html" rel="internal">A experiência</a>
+                    <a class="list-menu-link" href="experience.html" rel="internal">A experiência</a>
                     <hr class="line-menu">
                 </li>
                 <li class="list-menu-item">
-                    <a class="list-menu-link" href="../pages/sectors.html" rel="internal">Mapa de Setores</a>
+                    <a class="list-menu-link" href="sectors.html" rel="internal">Mapa de Setores</a>
                     <hr class="line-menu">
                 </li>
                 <li class="list-menu-item">
@@ -35,47 +35,45 @@
             </ul>
         </nav>
     </header>
-
     <main class="main">
         <div class="banner">
-            <h1 class="banner-title">A Experiência</h1>
+            <h1 class="banner-title">Garanta seu Ingresso</h1>
         </div>
 
-        <section class="topics">
-            <picture class="topic-images">
-                <source media="(min-width: 768px)" srcset="../images/img-experience/experience-tablet_desktop.png" type="image/png">
-                <img src="../images/img-experience/experience-mobile.png" alt="Uma mulher de braçoes abertos.">
-            </picture>
-            <h2 class="topic-title">Acessibilidade e Inclusão</h2>
-            <p class="topic-text">
-                Nosso evento tenta abraçar um público mais amplo em todos os sentidos, de todas as idades, corpos, gostos e pensamentos!  Isso está presente no  espaço físico, na sinalização, no treinamento da equipe de apoio, na comunicação em libras, braile, visual e tátil. Além disso, dispomos de ingressos gratuitos para pessoas com deficiência e acompanhantes, pessoas idosas e crianças!
-            </p>
-        </section>
+        <h2 class="form-title">
+            Preencha o formulário a seguir:
+        </h2>
+        <form class="form">
+            <label for="name">
+                Nome completo:
+                <input type="text" id="name" required>
+            </label>
+            <label for="email">
+                Email:
+                <input type="email" id="email" required>
+            </label>
 
-        <section class="topics">
-            <picture class="topic-images">
-                <source media="(min-width: 768px)" srcset="../images/img-experience/sustainability-tablet_desktop.png" type="image/png">
-                <img src="../images/img-experience/sustainability-mobile.png" alt="Garrafas de vidro dentro de uma sacola de pano.">
-            </picture>
-            <h2 class="topic-title">Sustentabilidade</h2>
-            <p class="topic-text">
-                Queremos estar aqui celebrando daqui a 50, 100 anos! Por isso, levamos o futuro do nosso planeta a sério. Nosso festival é carbono zero, com utilização de copos retornáveis, coleta e destinação adequada de resíduos, e transporte coletivo.
-            </p>
-        </section>
 
-        <section class="topics">
-            <picture class="topic-images">
-                <source media="(min-width: 768px)" srcset="../images/img-experience/attractions-tablet_desktop.png" type="image/png">
-                <img src="../images/img-experience/attractions-mobile.png" alt="Imagem de uma roda gigante">
-            </picture>
-            <h2 class="topic-title">Atrações</h2>
-            <p class="topic-text">
-                Intervenções artísticas e culturais para todos os gostos! Durante os intervalos dos shows, nossa experiência contará com recreação para crianças, oficina de cerâmica, origami, circo e aquarela! Além disso, nosso espaço contra com 3 praças de alimentação, roda gigante e outros brinquedos!
-            </p>
-        </section>
+            <label for="ticket-type">
+                Tipo de ingresso
+                <select id="ticket-type">
+                    <optgroup label="Tipo de ingresso">
+                        <option value="ingresso-normal">Ingresso normal</option>
+                        <option value="ingresso-antecipado">Ingressos antecipado</option>
+                        <option value="ingresso-VIP">Ingresso VIP</option>
+                        <option value="ingresso-cortesia">Ingresso cortesia</option>
+                    </optgroup>
+                </select>
+            </label>
 
+        
+        <label for="date-birth">
+            Data de nascimento:
+            <input type="date" id="date-birth" required>
+        </label>
+        <input type="submit" value="Avançar!">
+        </form>
     </main>
-
 
 
     <footer class="footer">
