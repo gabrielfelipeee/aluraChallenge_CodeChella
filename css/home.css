@@ -32,14 +32,21 @@
 .about {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 2rem;
     padding: 2rem 1.5rem 0 1.5rem;
     margin-bottom: 4.5rem;
 }
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
 .about-images > img, source {
-    width: 100%;
+    margin-bottom: 2rem;
 }
 
 .about-title {
@@ -47,6 +54,7 @@
     font-weight: 700;
     max-width: 312px;
     text-align: center;
+    margin: auto;
 }
 
 .about-title-local {
@@ -76,8 +84,8 @@
     box-shadow: 3px 3px 1px #444444;
 }
 
-/*main > section > .line-up styles */
 
+/*main > section > .line-up styles */
 .line-up {
     display: flex;
     flex-direction: column;
@@ -144,4 +152,84 @@
 /* Image guitar styles*/
 .images-guitar > img, source {
     width: 100%;
+}
+
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    /* banner styles */
+    .banner {
+        background-image: url('../images/img-home/banner-homepage-tablet.png');
+        height: 384px;
+    }
+    
+    .banner-title {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+
+    /*main > section > .about styles */
+    .about {
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+
+    .about-buy-ticket {
+        width: auto;
+    }
+
+    .about-title {
+        max-width: 400px;
+    }
+
+
+    /*main > section > .line-up styles */
+    .line-up_title {
+        font-size: 4rem;
+    }
+
+    .line-up-dates_day {
+        font-size: 3rem;
+    }
+
+    .line-up_main-list,
+    .line-up_secondary-list,
+    .line-up_tertiary-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* desktop */
+@media screen and (min-width: 1440px) {
+    /* banner styles */
+    .banner {
+        background-image: url('../images/img-home/banner-homepage-desktop.png');
+        height: 407px;
+    }
+    
+
+    /*main > section > .about styles */
+    .about {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3rem;
+        padding-left: 7.5rem;
+        padding-right: 7.5rem;
+    }
+
+    .about-images {
+        margin: 0;
+    }
+
+    .about-info {
+        gap: 1.5rem;
+    }
 }
