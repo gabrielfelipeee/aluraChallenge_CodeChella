@@ -47,6 +47,12 @@
     display: grid;
     gap: .5rem;
     list-style: none;
+    width: 100vw;
+}
+
+.item-question, .item-response {
+    width: 85%;
+    margin: auto;
 }
 
 .item-question {
@@ -78,4 +84,37 @@
 }
 .image-closed {
     transform: rotate(180deg) scaleY(1);
+}
+
+
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    /*banner styles */
+    .banner {
+        background-image: url('../images/img-information/banner-info-tablet.png');
+        height: 384px;
+    }
+    
+    .banner-title {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    /*main > section > .common-questions styles */
+    .item-question, .item-response {
+        width: 85%;
+        max-width: 1000px;
+        margin: auto;
+    }
+}
+
+
+/* desktop */
+@media screen and (min-width: 768px) {
+    /*banner styles */
+    .banner {
+        background-image: url('../images/img-information/banner-info-desktop.png');
+        height: 407px;
+    }
 }

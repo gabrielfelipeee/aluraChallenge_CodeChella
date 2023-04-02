@@ -18,8 +18,9 @@
     font: 400 2rem var(--font-secondary);
 }
 
-/* form styles */
 
+
+/* form styles */
 .form-title {
     font: 400 2rem var(--font-secondary);
     margin: 2rem 1.5rem 3rem 1.5rem;
@@ -30,8 +31,10 @@
 .form {
     display: flex;
     flex-direction: column;
-    margin: 0 1.5rem;
     gap: 2rem;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
 }
 
 label {
@@ -60,4 +63,86 @@ input[type="submit"] {
     border-radius: 1rem;
     border: none;
     cursor: pointer;
+}
+
+
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    /*banner styles */
+    .banner {
+        background-image: url('../images/img-ticket/banner-ticket-tablet.png');
+        height: 384px;
+    }
+    
+    .banner-title {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+
+    /* form styles */
+    .form-title {
+        font-size: 3rem;
+        margin-left: 3.75rem;
+        margin-right: 3.75rem;
+    }
+
+    .form-title, label {
+        color: var(--text-color);
+    }
+
+    label:nth-of-type(4) {
+        width: 70%;
+    }
+}
+
+
+
+/* desktop */
+@media screen and (min-width: 1440px) {
+    /*banner styles */
+    .banner {
+        background-image: url('../images/img-ticket/banner-ticket-desktop.png');
+        height: 407px;
+    }
+    
+    .banner-title {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+
+    /* form styles */
+    .form {
+        display: grid;
+        grid-template-areas:
+        'name name'
+        'email email'
+        'ticket-type date-birth'
+        'submit submit';
+        gap: 1.5rem;
+    }
+    label:nth-of-type(1) {
+        grid-area: name;
+    }
+
+    label:nth-of-type(2) {
+        grid-area: email;
+    }
+
+    label:nth-of-type(3) {
+        grid-area: ticket-type;
+        width: 388px;
+    }
+
+    label:nth-of-type(4) {
+        grid-area: date-birth;
+        width: 388px;
+    }
+
+    input[type="submit"] {
+        grid-area: submit;
+
+    }
 }

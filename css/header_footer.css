@@ -179,9 +179,9 @@
     .footer-text {
         grid-area: footer-text;
         text-align: left;
+        line-height: 2.5rem;
     }
     .footer-text-copyright {
         display: block;
-
     }
 }

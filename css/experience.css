@@ -19,7 +19,7 @@
 }
 
 
-/*main > section > .accessibility styles */
+/*main > section > .topics styles */
 .topics {
     display: flex;
     flex-direction: column;
@@ -44,4 +44,69 @@
     line-height: 2.5rem;
     text-align: center;
     padding-bottom: 2rem;
+}
+
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    /* banner styles */
+    .banner {
+        background-image: url('../images/img-experience/banner-experience-tablet.png');
+        height: 384px;
+    }
+
+    .banner-title {
+        font-size: 4rem;
+    }
+
+
+    /*main > section > .topics styles */
+    .topics {
+        padding-right: 3.75rem;
+        padding-left: 3.75rem;    
+    }
+
+    .topic-text {
+        max-width: 1000px;
+    }
+}
+
+
+/* desktop */
+@media screen and (min-width: 1440px) {
+    /* banner styles */
+    .banner {
+        background-image: url('../images/img-experience/banner-experience-desktop.png');
+        height: 407px;
+    }
+
+
+    /*main > section > .topics styles */
+    .topics {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .topic-images {
+        margin-right: 3rem;
+    }
+
+    .topic-text_container {
+        display: grid;
+        gap: 1.5rem;
+    }
+
+    .topic-title,
+    .topic-text {
+        text-align: left;
+    }
+
+    /* image on the left */
+    .topics:nth-of-type(2) {
+        flex-direction: row-reverse;
+    }
+
+    .topics:nth-of-type(2) > .topic-images {
+        margin: 0 0 0 3rem;
+    }
 }
