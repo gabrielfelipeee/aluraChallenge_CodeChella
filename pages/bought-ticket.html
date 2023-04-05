@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeChella - Ingresso comprado</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bought-ticket.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html"><img src="../images/logo.svg" alt="Logo do CodeChella"></a>
+        <ion-icon class="icon-menu" name="menu-outline"></menu></ion-icon>
+        <nav class="list-menu list-menu-invisible">
+            <ul class="list-menu-items">
+                <li class="list-menu-item">
+                    <a class="list-menu-link" href="pages/experience.html" rel="internal">A experiência</a>
+                    <hr class="line-menu">
+                </li>
+                <li class="list-menu-item">
+                    <a class="list-menu-link" href="sectors.html" rel="internal">Mapa de Setores</a>
+                    <hr class="line-menu">
+                </li>
+                <li class="list-menu-item">
+                    <a class="list-menu-link" href="information.html" rel="internal">Informações</a>
+                    <hr class="line-menu">
+                </li>
+                <li class="list-menu-item">
+                    <a class="list-menu-link" href="ticket.html" rel="internal">Ingresso</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="banner">
+            <h1 class="banner-title">Seu ingresso está aqui!</h1>
+        </div>
+
+        <p class="bought-ticket-text">
+            <span class="bought-ticket-text-block">Uhul, agora sim!</span> Seu ingresso está aqui, apresente na entrada do evento e divirta-se!
+        </p>
+
+        <section class="bought-ticket-card">
+            <div class="bought-ticket-card-logos">
+                <a href="../index.html">
+                    <img src="../images/img-bought-ticket/logo.svg" alt="Logo do CodeChella">
+                </a>
+                <img src="../images/img-bought-ticket/ellipse.svg" alt="">
+            </div>
+
+            <div class="bought-ticket-card-info">
+                <picture>
+                    <source media="(min-width: 1440px) and (max-width: 1439px)" srcset="../images/img-bought-ticket/qr-code-tablet.svg" type="image/svg+xml">
+                    <source media="(min-width: 768px)" srcset="../images/img-bought-ticket/qr-code-mobile-desktop.svg" type="image/svg+xml">
+                    <img src="../images/img-bought-ticket/qr-code-mobile-desktop.svg" alt="qr code do ingresso">
+                </picture>
+
+                <div>
+                    <h2 class="bought-ticket-card_name">Gabriel Felipe</h2>
+                    <ul class="bought-ticket-card_list">
+                        <li class="bought-ticket-card_item" id="bought-ticket_type-ticket">
+                            ingresso cortesia
+                        </li>
+                        <li class="bought-ticket-card_item" id="bought-ticket_sector">
+                            Setor Pista
+                        </li>
+                        <li class="bought-ticket-card_item">
+                            Data: <span id="bought-ticket_date">10/05</span>
+                        </li>
+                        <li class="bought-ticket-card_item">
+                            Local: <span id="bought-ticket_local">São Paulo</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a class="footer-logo" href="../index.html"><img src="../images/logo.svg" alt="Logo do CodeChella"></a>
+        <div class="social-media">
+            <p class="footer-text">Acesse nossas redes:</p>
+            <ul class="footer-list">
+                <li class="footer-list-item">
+                    <a class="footer-list-link" href="#">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a>
+                </li>
+                <li class="footer-list-item">
+                    <a class="footer-list-link" href="#">
+                        <ion-icon name="logo-twitch"></ion-icon>
+                    </a>
+                </li>
+                <li class="footer-list-item">
+                    <a class="footer-list-link" href="#">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+                <li class="footer-list-item">
+                    <a class="footer-list-link" href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p class="footer-text">
+            Desenvolvido por Alura. Projeto fictício sem fins comerciais.
+        </p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="../main.js"></script>
+</body>
+</html>

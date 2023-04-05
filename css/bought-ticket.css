@@ -1,0 +1,130 @@
+@import url("../style.css");
+
+.main {
+    background: var(--bg-main);
+    padding-bottom: 4rem;
+}
+
+
+/* banner styles */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/img-bought-ticket/banner-bought_ticket-mobile.png") no-repeat center center /cover;
+    height: 281px;
+}
+
+.banner-title {
+    font: 400 2rem var(--font-secondary);
+    text-align: center;
+    padding: 0 1.5rem;
+    text-align: center;
+}
+
+
+/* bought-text styles */
+.bought-ticket-text {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    padding: 0 1.5rem;
+    margin: 4rem auto 2rem auto;
+    text-align: center;
+    max-width: 850px;
+}
+.bought-ticket-text-block {
+    display: block;
+}
+
+
+/* bought-ticket-card styles */
+.bought-ticket-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-main);
+    width: 90%;
+    max-width: 850px;
+    padding: 2rem;
+    margin: auto;
+}
+
+
+.bought-ticket-card-logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+
+.bought-ticket-card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bought-ticket-card_name {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.bought-ticket-card_list {
+    list-style: none;
+    text-align: center;
+}
+
+.bought-ticket-card_item {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+
+
+
+/* tablet */
+@media screen and (min-width: 768px) {
+        /* banner styles */
+        .banner {
+            background-image: url('../images/img-bought-ticket/banner-bought_ticket-tablet.png');
+            height: 381px;
+        }
+
+        .banner-title {
+            font-size: 4rem;
+        }
+}
+
+
+
+/* desktop */
+@media screen and (min-width: 1440px) {
+    /* banner styles */
+    .banner {
+        background-image: url('../images/img-bought-ticket/banner-bought_ticket-desktop.png');
+        height: 407px;
+    }
+
+    
+    /* bought-ticket-card styles */
+    .bought-ticket-text-block {
+        display: inline;
+    }
+
+
+    .bought-ticket-card-info {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 3rem;
+        width: 100%;
+    }
+
+    .bought-ticket-card_list {
+        text-align: left;
+    }
+}
