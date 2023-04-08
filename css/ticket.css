@@ -91,10 +91,6 @@ input[type="submit"] {
     .form-title, label {
         color: var(--text-color);
     }
-
-    label:nth-of-type(4) {
-        width: 70%;
-    }
 }
 
 
@@ -120,6 +116,7 @@ input[type="submit"] {
         'name name'
         'email email'
         'ticket-type date-birth'
+        'sectors event-date'
         'submit submit';
         gap: 1.5rem;
     }
@@ -141,6 +138,15 @@ input[type="submit"] {
         width: 388px;
     }
 
+    label:nth-of-type(5) {
+        grid-area: sectors;
+        width: 388px;
+    }
+
+    label:nth-of-type(6) {
+        grid-area: event-date;
+        width: 388px;
+    }
     input[type="submit"] {
         grid-area: submit;
 

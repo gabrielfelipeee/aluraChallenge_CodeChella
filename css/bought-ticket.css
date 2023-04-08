@@ -70,6 +70,7 @@
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .bought-ticket-card_list {
@@ -124,6 +125,10 @@
         width: 100%;
     }
 
+    .bought-ticket-card_name {
+        text-align: left;
+    }
+    
     .bought-ticket-card_list {
         text-align: left;
     }

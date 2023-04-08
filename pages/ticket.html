@@ -43,35 +43,54 @@
         <h2 class="form-title">
             Preencha o formulário a seguir:
         </h2>
-        <form class="form">
+        <form class="form" autocomplete="on">
             <label for="name">
                 Nome completo:
-                <input type="text" id="name" required>
+                <input type="text" id="name" placeholder="Seu nome" autocomplete="name" required>
             </label>
             <label for="email">
                 Email:
-                <input type="email" id="email" required>
+                <input type="email" id="email" placeholder="Seu email" autocomplete="email" required>
+            </label>
+            <label for="date-birth">
+                Data de nascimento:
+                <input type="date" id="date-birth" autocomplete="bday" required>
             </label>
 
 
             <label for="ticket-type">
                 Tipo de ingresso
-                <select id="ticket-type">
-                    <optgroup label="Tipo de ingresso">
-                        <option value="ingresso-normal">Ingresso normal</option>
-                        <option value="ingresso-antecipado">Ingressos antecipado</option>
-                        <option value="ingresso-VIP">Ingresso VIP</option>
-                        <option value="ingresso-cortesia">Ingresso cortesia</option>
-                    </optgroup>
+                <select id="ticket-type" required>
+                    <option value="" disabled selected hidden>Tipo de ingresso</option>
+                    <option value="ingresso-normal">Ingresso normal</option>
+                    <option value="ingresso-antecipado">Ingresso antecipado</option>
+                    <option value="ingresso-VIP">Ingresso VIP</option>
+                    <option value="ingresso-cortesia">Ingresso cortesia</option>
                 </select>
             </label>
 
-        
-        <label for="date-birth">
-            Data de nascimento:
-            <input type="date" id="date-birth" required>
-        </label>
-        <input type="submit" value="Avançar!">
+            <label for="sectors">
+                Setor
+                <select id="sectors" required>
+                    <option value="" disabled selected hidden>Setor</option>
+                    <option value="pista-comum">Pista comum</option>
+                    <option value="pista-premium">Pista premium</option>
+                    <option value="cadeiras-terreo">Cadeiras térreo</option>
+                    <option value="cadeiras-superiores">Cadeiras superiores</option>
+                    <option value="rampas">Rampas</option>
+                </select>
+            </label>
+
+            <label for="event-date">
+                Data do evento
+                <select id="event-date" required>
+                    <option value="" disabled selected hidden>Data</option>
+                    <option value="11/03">11/03</option>
+                    <option value="12/03">12/03</option>
+                </select>
+            </label>
+
+            <input type="submit" value="Avançar!">
         </form>
     </main>
 
@@ -109,6 +128,7 @@
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="../main.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/ticket.js"></script>
 </body>
 </html>

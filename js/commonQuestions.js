@@ -1,12 +1,3 @@
-const menu = document.querySelector('.icon-menu');
-menu.addEventListener('click', () => {
-    const listMenuInvisible = document.querySelector('.list-menu');
-
-    listMenuInvisible.classList.toggle('list-menu-invisible');
-})
-
-
-// Exibir perguntas frequentes
 const questions = document.querySelectorAll('.questions-list-item');
 questions.forEach( element => {
     element.addEventListener('click', () => {
