@@ -1,6 +1,6 @@
 # AluraChallenge Front-End (6° edição) - CodeChella
 
-O projeto <strong>CodeChella</strong> consiste em uma página web que apresenta informações sobre um evento musical. A página inclui uma funcionalidade que permite aos usuários preencher um formulário para gerar um ingressocom algumas informações, como: nome, tipo de ingresso, setor, data, e local, dinamicamente, que pode ser visualizado em outra página, depois de enviar o fórmulário com as informações. 
+O projeto <strong>CodeChella</strong> consiste em uma simulação de uma página web que apresenta informações sobre um evento musical. A página inclui uma funcionalidade que permite aos usuários preencher um formulário para gerar um ingressocom algumas informações, como: nome, tipo de ingresso, setor, data, e local, dinamicamente, que pode ser visualizado em outra página, depois de enviar o fórmulário com as informações. 
 
 Resumindo, o projeto é uma página de evento que destaca a capacidade de gerar ingressos dinamicamente.
 
