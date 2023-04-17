@@ -43,9 +43,10 @@ Participando desse projeto, pode-se vivenciar de forma prática as etapas de um 
 
 <h4 align="center">Tablet<h4>
 <div align="center">
-    <img alt="tablet preview" src="public/preview/tablet-preview.png#vitrinedev">
-</div>
 
+![](public/preview/tablet-preview.png#vitrinedev)
+
+</div>
 <br>
 
 <h4 align="center">Desktop<h4>
